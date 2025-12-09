@@ -1,0 +1,104 @@
+$green-background:#00745A;
+
+.main{
+    width: 100%;
+    height: auto;
+    
+    .mainContentOne{
+        width: 100%;
+        height: 85vh;
+
+        display: flex;
+
+        .boxLeft{
+            width: 50%;
+            height: 100%;
+            padding: 0 2rem 0 8rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+
+            h2{
+                font-size: 6rem;
+                text-align: justify;
+                text-shadow: 1px 1px 2px rgba(95, 95, 95, 0.8);
+            }
+
+            p{
+                font-size: 2.5rem;
+                text-align: justify;
+            }
+
+            .boxButton{
+                width: 80%;
+                height: 10%;
+                padding-right: 4rem;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                button{
+                    height: 100%;
+                    width: 48%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    border-color: $green-background;
+                    color: $green-background;
+                }
+
+                .buttonVoluntario{
+                    border: none;
+                    background-color: $green-background;
+                    color: #ffffff;
+                    font-weight: bold;
+
+                    &:hover{
+                        background-color: #0dbb95;
+                        transition: background-color 0.3s ease;
+                    }
+                }
+
+                .buttonAjudar{
+                    border-color: $green-background;
+                    color: $green-background;
+                    font-weight: bold;
+
+                    &:hover{
+                        background-color: #e9ebea;
+                        transition: background-color 0.3s ease;
+                    }
+                }
+            }
+        }
+
+        .boxRigth{
+            width: 50%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .boxImage{
+                width: 90%;
+                height: 90%;    
+                background-image: url('src/assets/doctor.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    .mainContentTwo{
+        border: solid 1px green;
+        width: 100%;
+        height: 50vh;
+        background-color:$green-background;
+    }
+}
