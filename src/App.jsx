@@ -1,12 +1,15 @@
-import {Header} from './components/header/Header'
+import { Header } from './components/header/Header'
 import { PageRouter } from './routes/PagesRouter'
 import './index.scss'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <Header/>
-      <PageRouter/>
+      <BrowserRouter>
+        <Header />
+        <PageRouter />
+      </BrowserRouter>
     </>
   )
 }
