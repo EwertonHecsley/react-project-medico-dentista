@@ -30,7 +30,6 @@ export const Home = () => {
           <div className={s.boxImage}></div>
         </section>
       </section>
-
       <section className={s.mainContentTwo}></section>
     </main>
   );
