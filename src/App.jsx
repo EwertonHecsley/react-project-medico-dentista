@@ -1,7 +1,11 @@
+import {Header} from './components/header/Header'
+import { PageRouter } from './routes/PagesRouter'
+
 function App() {
   return (
     <>
-      <h1>App</h1>
+      <Header/>
+      <PageRouter/>
     </>
   )
 }
