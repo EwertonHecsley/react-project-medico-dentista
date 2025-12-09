@@ -1,5 +1,6 @@
 import {Header} from './components/header/Header'
 import { PageRouter } from './routes/PagesRouter'
+import './index.scss'
 
 function App() {
   return (
