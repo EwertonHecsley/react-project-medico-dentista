@@ -1,0 +1,295 @@
+$green-background: #00745a;
+
+.main {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    background-color: $green-background;
+
+    .boxContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem 0;
+
+        h2 {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+
+        p {
+            padding-bottom: 2rem;
+        }
+
+        .boxCards {
+            width: 95%;
+            height: 55%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            article {
+                padding: 0.5rem;
+                min-width: 200px;
+                min-height: 200px;
+            }
+
+            h3 {
+                color: #000000;
+                font-size: 2rem;
+            }
+
+            p {
+                color: #000000;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            .boxCards {
+                width: 90%;
+
+                article {
+                    width: 30%;
+                    min-width: 300px;
+                }
+            }
+        }
+
+         @media (max-width: 900px) {
+            .boxCards {
+                article {
+                    width: 50%;
+                    margin: 0.5rem;
+                    min-width: 230px;
+                    min-height: 230px;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .boxCards {
+                flex-direction: column;
+
+                article {
+                    margin: 1rem;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            h2 {
+                font-size: 3rem;
+                padding: 0 0.5rem 1 0.5rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1rem;
+                text-align: center;
+                padding: 0 0.5rem 1 0.5rem;
+            }
+        }
+    }
+
+    .boxForm {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+        background-color: $green-background;
+    }
+
+    .formWrapper {
+        width: 100%;
+        max-width: 1100px;
+        position: relative;
+        perspective: 1200px;
+        min-height: 260px;
+    }
+
+    .formVoluntario,
+    .successCard {
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease;
+    }
+
+    .formVoluntario {
+        background-color: #ffffff;
+        padding: 2.5rem 2.5rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        transform: rotateY(0deg);
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .groupTitle {
+            label {
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+            gap: 1.5rem;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        .field,
+        .fieldFull {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .field {
+            flex: 1;
+        }
+
+        .fieldFull {
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #d4d4d4;
+            padding: 0.9rem 1rem;
+            font-size: 1rem;
+            outline: none;
+            background-color: #f7f7f7;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #00745a;
+            background-color: #ffffff;
+        }
+
+        .infoText {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            color: #333333;
+        }
+
+        .buttonSubmit {
+            margin: 1rem auto 0;
+            padding: 0.9rem 3rem;
+            border-radius: 999px;
+            border: none;
+            background-color: #00745a;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition:
+                background-color 0.3s ease,
+                opacity 0.3s ease;
+
+            &:hover {
+                background-color: #0dbb95;
+            }
+
+            &:disabled {
+                background-color: #9fbfb6;
+                cursor: not-allowed;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .successCard {
+        background-color: #ffffff;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        transform: rotateY(180deg);
+
+        .successIcon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: $green-background;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #222222;
+            text-align: center;
+        }
+    }
+
+    .flipped {
+        .formVoluntario {
+            transform: rotateY(180deg);
+        }
+
+        .successCard {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .formWrapper {
+        height: auto;
+    }
+
+    form.formVoluntario {
+        position: absolute;
+    }
+
+    .successCard {
+        position: absolute;
+    }
+
+    .formWrapper {
+        min-height: 850px; 
+    }
+
+    animation: fadeUp 1.2s ease-out both;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
