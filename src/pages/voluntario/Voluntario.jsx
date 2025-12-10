@@ -69,7 +69,6 @@ export const Voluntario = () => {
 
             <div className={s.row}>
               <div className={s.field}>
-                <label htmlFor="nome">Seu Nome *</label>
                 <input
                   id="nome"
                   type="text"
@@ -81,7 +80,6 @@ export const Voluntario = () => {
               </div>
 
               <div className={s.field}>
-                <label htmlFor="email">Seu Email *</label>
                 <input
                   id="email"
                   type="email"
@@ -95,7 +93,6 @@ export const Voluntario = () => {
 
             <div className={s.row}>
               <div className={s.fieldFull}>
-                <label htmlFor="telefone">Seu Telefone *</label>
                 <input
                   id="telefone"
                   type="text"
@@ -124,7 +121,7 @@ export const Voluntario = () => {
             </div>
 
             <p className={s.infoText}>
-              Entraremos em contato para mais informações
+              Entraremos em contato para mais informações!
             </p>
 
             <button
