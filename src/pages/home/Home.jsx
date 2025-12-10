@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import s from './Home.module.scss';
+import { Card } from '../../components/card/Card';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -30,7 +31,25 @@ export const Home = () => {
           <div className={s.boxImage}></div>
         </section>
       </section>
-      <section className={s.mainContentTwo}></section>
+      <section className={s.mainContentTwo}>
+        <section className={s.boxContent}>
+          <h2>Nossa Missão</h2>
+          <p>Transformar vidas através do acesso universal a saúde de qualidade</p>
+          <section className={s.boxCards}>
+            <Card 
+              title="Acesso Equitativo" 
+              description="Garantir que todos tenham acesso a cuidados de saúde de qualidade, independentemente de sua condição financeira."/>
+            <Card 
+              title="Comunidade Forte"
+              description="Construir uma rede de profissionais de saúde dedicados a servir com compaixão e profissionalismo."
+            />
+            <Card
+              title="Bem-estar Total"
+              description="Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida."
+            />
+          </section>
+        </section>
+      </section>
     </main>
   );
 };

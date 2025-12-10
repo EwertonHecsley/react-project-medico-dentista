@@ -234,8 +234,50 @@ $green-background: #00745a;
 
   .mainContentTwo {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: $green-background;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boxContent{
+      width: 100%;
+      height: 90%;
+      background:none;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 0 8rem 0 8rem;
+
+      h2{
+        background: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 3.8rem;
+      }
+
+      p{
+        background: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+      }
+
+      .boxCards{
+        width: 100%;
+        height: 60%;
+        background: none;
+
+        display: flex;
+        align-items:normal;
+        justify-content: space-between;
+      }
+
+      animation: fadeUp 1.2s ease-out both;
+      animation-delay: 2s;
+    }
   }
 }
 
@@ -248,5 +290,16 @@ $green-background: #00745a;
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
