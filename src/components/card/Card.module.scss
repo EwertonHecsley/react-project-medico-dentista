@@ -12,12 +12,8 @@ $green-background:#00745A;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   h3{
-    font-size: 1.4rem;
+    font-size:2rem;
     font-weight: 700;
-  }
-
-  p{
-    font-size: 1rem;
   }
 
   &:hover{
@@ -27,8 +23,20 @@ $green-background:#00745A;
 }
 
 .white{
-  background-color: #ffffff;
-  color: #222;
+  border: solid 1px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  h3{
+    color: $green-background;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
 }
 
 .green{
@@ -45,10 +53,8 @@ $green-background:#00745A;
   h3{
     background: none;
     color: #ffffff;
-    font-size: 2.6rem;
-  }
-
-  p{
-    color: #f5f5f5;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }

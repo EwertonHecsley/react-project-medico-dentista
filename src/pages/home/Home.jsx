@@ -50,6 +50,34 @@ export const Home = () => {
           </section>
         </section>
       </section>
+      <section className={s.mainContentThree}>
+        <section className={s.boxContent}>
+          <h2>Nosso Impacto</h2>
+          <p>Transformando a saúde de nossa comunidade, um paciente de cada vez</p>
+          <section className={s.boxCards}>
+            <Card
+              title="2,500+"
+              description="Pessoas Atendidas"
+              variant="white"
+            />
+            <Card
+              title="150+"
+              description="Profissionais Voluntários"
+              variant="white"
+            />
+            <Card
+              title="98%"
+              description="Satisfação dos Pacientes"
+              variant="white"
+            />
+            <Card
+              title="5+"
+              description="Anos de Dedicação"
+              variant="white"
+            />
+          </section>
+        </section>
+      </section>
     </main>
   );
 };

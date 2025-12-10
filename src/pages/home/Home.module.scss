@@ -40,8 +40,13 @@ $green-background: #00745a;
       justify-content: center;
       gap: 2.5rem;
 
+      opacity: 0;
+      transform: translateX(-40px);
+      animation: slideInLeft 1.2s ease-out forwards;
+      animation-delay: 0.6s;
+
       @media (max-width: 1440px) {
-        padding: 0 2rem 0 4rem;
+        padding: 2rem 2rem 0 4rem;
       }
 
       @media (max-width: 1024px) {
@@ -241,38 +246,237 @@ $green-background: #00745a;
     justify-content: center;
     align-items: center;
 
-    .boxContent{
+    @media (max-width: 1024px) {
+      height: auto;
+      padding: 3rem 3rem;
+    }
+
+    @media (max-width: 768px) {
+      margin: auto;
+      height: auto;
+      width: auto;
+    }
+
+    @media (max-width: 360px) {
+      padding: 2rem 1rem;
+    }
+
+    .boxContent {
       width: 100%;
       height: 90%;
-      background:none;
+      background: none;
 
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
-      padding: 0 8rem 0 8rem;
+      padding: 0 8rem;
 
-      h2{
+      @media (max-width: 1440px) {
+        padding: 0 5rem;
+      }
+
+      @media (max-width: 1024px) {
+        height: auto;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+      }
+
+      @media (max-width: 768px) {
+        gap: 1.75rem;
+        margin: auto;
+      }
+
+      @media (max-width: 360px) {
+        gap: 1.5rem;
+      }
+
+      h2 {
         background: none;
         color: #ffffff;
         font-weight: bold;
         font-size: 3.8rem;
+
+        @media (max-width: 1440px) {
+          font-size: 3rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 2.6rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 2.2rem;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 2rem;
+        }
       }
 
-      p{
+      p {
         background: none;
         color: #ffffff;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        max-width: 720px;
+        padding-bottom: 1rem;
+
+        @media (max-width: 1440px) {
+          font-size: 1.3rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 1rem;
+        }
       }
 
-      .boxCards{
+      .boxCards {
         width: 100%;
         height: 60%;
         background: none;
 
         display: flex;
-        align-items:normal;
+        align-items: normal;
         justify-content: space-between;
+        gap: 2rem;
+
+        @media (max-width: 1024px) {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+          margin: auto;
+        }
+
+        @media (max-width: 360px) {
+          gap: 1.25rem;
+        }
+      }
+
+      animation: fadeUp 1.2s ease-out both;
+      animation-delay: 2s;
+    }
+  }
+
+  .mainContentThree {
+    width: 100%;
+    height: 60vh;
+
+    .boxContent {
+      width: 100%;
+      height: 90%;
+      background: none;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 0 8rem;
+
+      @media (max-width: 1440px) {
+        padding: 0 5rem;
+      }
+
+      @media (max-width: 1024px) {
+        height: auto;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem 0 1rem;
+      }
+
+      @media (max-width: 768px) {
+        gap: 1.75rem;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 1rem;
+        
+      }
+
+      @media (max-width: 360px) {
+        gap: 1.5rem;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 3.8rem;
+        padding-top: 1rem;
+
+        @media (max-width: 1440px) {
+          font-size: 3rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 2.6rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 2.2rem;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        font-size: 1.3rem;
+        max-width: 720px;
+        padding-bottom: 1rem;
+
+        @media (max-width: 1440px) {
+          font-size: 1.3rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 1rem;
+        }
+      }
+
+      .boxCards {
+        width: 100%;
+        height: 60%;
+        background: none;
+
+        display: flex;
+        align-items: normal;
+        justify-content: space-between;
+        gap: 2rem;
+
+        @media (max-width: 1024px) {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+
+        @media (max-width: 360px) {
+          gap: 1.25rem;
+        }
       }
 
       animation: fadeUp 1.2s ease-out both;
@@ -281,11 +485,21 @@ $green-background: #00745a;
   }
 }
 
-
 @keyframes slideInRight {
   0% {
     opacity: 0;
     transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
   }
   100% {
     opacity: 1;
