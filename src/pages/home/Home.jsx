@@ -79,6 +79,7 @@ export const Home = () => {
                 <Card
                   title={c.title}
                   description={c.description}
+                  key={c.title}
                 />
               )
             })}
@@ -90,12 +91,13 @@ export const Home = () => {
           <h2>Nosso Impacto</h2>
           <p>Transformando a saúde de nossa comunidade, um paciente de cada vez</p>
           <section className={s.boxCards}>
-           {contentCardsTwo.map(c => {
+           {contentCardsTwo.map(c=> {
             return (
               <Card
                 title={c.title}
                 description={c.description}
                 variant={c.variant}
+                key={c.title}
               />
             )
            })}
