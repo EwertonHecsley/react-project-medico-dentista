@@ -9,6 +9,44 @@ export const Home = () => {
     navigate("/voluntario");
   };
 
+  const contentCardsOne = [
+    {
+      title:"Acesso Equitativo",
+      description:"Garantir que todos tenham acesso a cuidados de saúde de qualidade, independentemente de sua condição financeira."
+    },
+    {
+      title:"Comunidade Forte",
+      description:"Construir uma rede de profissionais de saúde dedicados a servir com compaixão e profissionalismo."
+    },
+    {
+      title:"Bem-estar Total",
+      description:"Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida."
+    }
+  ];
+
+  const contentCardsTwo = [
+    {
+      title:"2,500+",
+      description:"Pessoas Atendidas",
+      variant:"white"
+    },
+    {
+      title:"150+",
+      description:"Profissionais Voluntários",
+      variant:"white"
+    },
+    {
+      title:"98%",
+      description:"Satisfação dos Pacientes",
+      variant:"white"
+    },
+    {
+      title:"5+",
+      description:"Anos de Dedicação",
+      variant:"white"
+    }
+  ];
+
   return (
     <main className={s.main}>
       <section className={s.mainContentOne}>
@@ -36,17 +74,14 @@ export const Home = () => {
           <h2>Nossa Missão</h2>
           <p>Transformar vidas através do acesso universal a saúde de qualidade</p>
           <section className={s.boxCards}>
-            <Card 
-              title="Acesso Equitativo" 
-              description="Garantir que todos tenham acesso a cuidados de saúde de qualidade, independentemente de sua condição financeira."/>
-            <Card 
-              title="Comunidade Forte"
-              description="Construir uma rede de profissionais de saúde dedicados a servir com compaixão e profissionalismo."
-            />
-            <Card
-              title="Bem-estar Total"
-              description="Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida."
-            />
+            {contentCardsOne.map(c=>{
+              return (
+                <Card
+                  title={c.title}
+                  description={c.description}
+                />
+              )
+            })}
           </section>
         </section>
       </section>
@@ -55,26 +90,15 @@ export const Home = () => {
           <h2>Nosso Impacto</h2>
           <p>Transformando a saúde de nossa comunidade, um paciente de cada vez</p>
           <section className={s.boxCards}>
-            <Card
-              title="2,500+"
-              description="Pessoas Atendidas"
-              variant="white"
-            />
-            <Card
-              title="150+"
-              description="Profissionais Voluntários"
-              variant="white"
-            />
-            <Card
-              title="98%"
-              description="Satisfação dos Pacientes"
-              variant="white"
-            />
-            <Card
-              title="5+"
-              description="Anos de Dedicação"
-              variant="white"
-            />
+           {contentCardsTwo.map(c => {
+            return (
+              <Card
+                title={c.title}
+                description={c.description}
+                variant={c.variant}
+              />
+            )
+           })}
           </section>
         </section>
       </section>
