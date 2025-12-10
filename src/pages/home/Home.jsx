@@ -51,7 +51,7 @@ export const Home = () => {
     <main className={s.main}>
       <section className={s.mainContentOne}>
         <section className={s.boxLeft}>
-          <img src="src/assets/imagem.png" alt="imagem do nome da logo" />
+          <img src="./imagem.png" alt="imagem do nome da logo" />
           <h2>Saúde e cuidado sem barreiras</h2>
           <p>
             Um projeto dedicado a oferecer atendimento médico e odontológico gratuito

@@ -13,7 +13,7 @@ export const Header = () => {
     <>
       <header className={s.header}>
         <section className={s.headerBoxLeft}>
-          <img src="src/assets/logo.png" alt="logo de coracao" />
+          <img src="./logo.png" alt="logo de coracao" />
           <Link to="/">
             <p>Médicos & Dentistas</p>
           </Link>
