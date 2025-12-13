@@ -1,16 +1,58 @@
-# React + Vite
+# React Project - Médico Dentista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação Single Page Application (SPA) feita em React para um site de um projeto voluntário médico‑odontológica, com foco em layout moderno, responsivo e rápido.
 
-Currently, two official plugins are available:
+## Visão geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto apresenta uma landing page para uma ação voluntária médico‑odontológica, para que profissionais da área específica possa se voluntariar.  
+O projeto foi criado com Vite e utiliza componentes reutilizáveis, além de estilização com SCSS para facilitar manutenção e escalabilidade.
 
-## React Compiler
+## Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML5 e CSS3
+- SCSS (Sass)
 
-## Expanding the ESLint configuration
+## Imagens
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1476" height="834" alt="image" src="https://github.com/user-attachments/assets/a83be905-f080-48dd-814e-86f9e870c44c" />
+
+<hr/>
+
+<img width="691" height="906" alt="image" src="https://github.com/user-attachments/assets/e2cd003a-6260-481c-b638-a5fb34a67c37" />
+
+
+
+## Como executar o projeto localmente
+
+1. Clone este repositório:
+
+```
+  git clone https://github.com/EwertonHecsley/react-project-medico-dentista.git
+```
+
+2. Acesse a pasta do projeto:
+
+```
+  cd react-project-medico-dentista
+```
+
+3. Instale as dependências:
+
+```
+  npm install
+```
+
+4. Rode o servidor de desenvolvimento:
+
+```
+  npm run dev
+```
+
+5. Abra o navegador no endereço indicado no terminal (geralmente `http://localhost:5173`).
+
+## O projeto esta rodando em :
+
+`https://react-project-medico-dentista.vercel.app/`
